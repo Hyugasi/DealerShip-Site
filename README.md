@@ -6,19 +6,19 @@ This site will be a replacement for my friend who owns a used car dealership. It
 ![Image of the Wireframes](https://i.imgur.com/IaxAooS.png)
 
 ## MVPs
-- [] Full CRUD backend
-- [] Deploy backend to heroku
-- [] Implement crud into the owner site
-- [] Design of Frontend site
-- [] Deploy Frontend
-- [] Responsivness
-- [] Authentication
-- [] Search Function
+- [ ] Full CRUD backend
+- [ ] Deploy backend to heroku
+- [ ] Implement crud into the owner site
+- [ ] Design of Frontend site
+- [ ] Deploy Frontend
+- [ ] Responsivness
+- [ ] Authentication
+- [ ] Search Function
 
 ## Post MVPs
-- [] Design of owner site
-- [] Frontend Moving Images
-- [] Carosel of images on the "Read More"
+- [ ] Design of owner site
+- [ ] Frontend Moving Images
+- [ ] Carosel of images on the "Read More"
 
 ## Time Priority Matrix
 
