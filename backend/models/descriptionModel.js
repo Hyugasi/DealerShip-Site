@@ -3,7 +3,6 @@ const Schema = mongoose.Schema
 
 const DescriptionSchema = Schema({
     "description": String,
-    "modelYear": Number,
     "condition": String,
 })
 

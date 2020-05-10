@@ -4,6 +4,7 @@ const Schema = mongoose.Schema
 const VehicleSchema = Schema({
     "make": String,
     "model": String,
+    "img": String,
     "year": String,
     "price": Number,
     description: [
