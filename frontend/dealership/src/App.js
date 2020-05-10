@@ -11,6 +11,7 @@ function App() {
     <div>
       <header>
         <nav>
+          <img src="https://i.imgur.com/j5hbxGz.jpg" />
           <Link to="/">
             <h1>Ricky's Auto Motors</h1>
           </Link>

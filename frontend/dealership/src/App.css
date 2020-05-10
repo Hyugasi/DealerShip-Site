@@ -9,10 +9,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
 }
 nav a {
   text-decoration: none;
   color: #262626;
+  padding: 30px;
 }
 nav a:hover {
   text-decoration: underline;
@@ -23,4 +25,7 @@ nav a:hover {
   text-decoration: underline;
   background-color: #595959;
   color: #BABDBF;
+}
+header {
+  background-image: url("https://i.imgur.com/j5hbxGz.jpg");
 }
