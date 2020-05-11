@@ -6,5 +6,5 @@ const DescriptionSchema = Schema({
     "condition": String,
 })
 
-const Description = mongoose.Schema('Description', DescriptionSchema)
+const Description = mongoose.model('Description', DescriptionSchema)
 module.exports = Description
