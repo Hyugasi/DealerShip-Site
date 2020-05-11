@@ -26,6 +26,36 @@ nav a:hover {
   background-color: #595959;
   color: #BABDBF;
 }
-header {
-  background-image: url("https://i.imgur.com/j5hbxGz.jpg");
+header img {
+  position: relative;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px){
+  nav a:nth-child(1){
+    padding: 0px
+  }
+  nav a:nth-child(2) {
+    display: none;
+  }
+  nav a:nth-child(3) {
+    display: none;
+  }
+  nav a:nth-child(4) {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .wheel {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
 }

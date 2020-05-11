@@ -7,24 +7,30 @@ import Inventory from './components/inventory/inventory';
 import Contact from './components/contact/contact'
 
 function App() {
+  function showMenu() {
+    const hidden = `$(".menItem").css("display", "flex")`
+    return hidden
+  }
   return (
     <div>
       <header>
         <nav>
-          <img src="https://i.imgur.com/j5hbxGz.jpg" />
           <Link to="/">
             <h1>Ricky's Auto Motors</h1>
           </Link>
           <Link to="/inventory">
-            <h2>Inventory</h2>
+            <h2 className="menItem">Inventory</h2>
           </Link>
           <Link to="/financing">
-            <h2>Financing</h2>
+            <h2 className="menItem">Financing</h2>
           </Link>
           <Link to="/contact">
-            <h2>Contact</h2>
+            <h2 className="menItem">Contact</h2>
           </Link>
+          <span class="wheel" onClick={showMenu}></span>
         </nav>
+
+        <img src="https://i.imgur.com/j5hbxGz.jpg" alt="Ricky's Auto Motors" />
       </header>
       <main>
         <Switch>
@@ -38,7 +44,7 @@ function App() {
       <footer>
 
       </footer>
-    </div>
+    </div >
   );
 }
 
