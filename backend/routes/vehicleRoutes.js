@@ -4,8 +4,8 @@ const vehicleController = require("../controllers/vehicleController")
 
 router.get('/', vehicleController.getAllVehicles)
 router.get('/:id', vehicleController.getVehiclesById)
-router.get('/', vehicleController.createVehicle)
-router.get('/:id', vehicleController.updateVehicle)
-router.get('/:id', vehicleController.deleteVehicle)
+router.post('/', vehicleController.createVehicle)
+router.put('/:id', vehicleController.updateVehicle)
+router.delete('/:id', vehicleController.deleteVehicle)
 
 module.exports = router
