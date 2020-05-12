@@ -30,4 +30,5 @@ This site will be a replacement for my friend who owns a used car dealership. It
 | Search Functionality        |    H     |      5hrs      |      0hrs      |    0hrs     |
 | Authentication for seperate site          |    H     |      10hrs      |      0hrs      |    0hrs     |
 | Responsive           |    H     |      5hrs      |      0hrs      |    0hrs     |
+| Learn new authentication methods           |    H     |      5hrs      |      0hrs      |    0hrs     |
 | Total                |    H     |     0hrs      |     0hrs      |    0hrs    |
