@@ -25,25 +25,4 @@ Vehicle.deleteMany({}).then(() => {
             console.log('created cb500')
         })
     })
-
-    // Vehicle.create({
-    //     make: "Honda",
-    //     model: "Civic",
-    //     img: "https://di-uploads-pod12.dealerinspire.com/driversautomart/uploads/2019/12/pasted-image-0.png",
-    //     year: 2018,
-    //     price: 15000,
-    // }).then(civic => {
-    //     Promise.all([
-    //         Description.create({
-    //             description: "this is a honda civic in good condition",
-    //             condition: "Used"
-    //         }).then(description => {
-    //             civic.description.push(description)
-    //             console.log('created honda civic', civic, description)
-    //         })
-    //     ]).then(() => {
-    //         civic.save()
-    //     })
-    // })
-
 })
