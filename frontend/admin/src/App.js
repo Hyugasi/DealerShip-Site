@@ -1,19 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Route, Switch, Link, Redirect } from "react-router-dom";
 import Home from './components/home/home'
 import Manage from './components/manage/manage';
 import Description from './components/description/description';
+import { getAllVehicles } from './services/api-helper'
+
 
 function App() {
+  const [vehicles, setVehicles] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
+
+
+
+  useEffect(() => {
+    const makeAPICall = async () => {
+      const resp = await getAllVehicles()
+      setVehicles(resp)
+      setIsLoading(false)
+    }
+    makeAPICall()
+  }, [])
+
   return (
     <div>
-      <h1>Admin Pag</h1>
+      <h1>Admin Page</h1>
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/manage" component={Manage} />
-          <Route path="/description/:id" component={Description} />
+          <Route path="/description/:id" render={(routerProps) => (<Description vehicles={vehicles} match={routerProps.match} />)} />
           <Redirect to="/" />
         </Switch>
       </main>

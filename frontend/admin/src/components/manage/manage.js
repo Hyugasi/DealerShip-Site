@@ -8,8 +8,6 @@ function Manage() {
     const [isLoading, setIsLoading] = useState(true)
 
 
-    console.log("Vehicle", vehicles)
-
     useEffect(() => {
         const makeAPICall = async () => {
             const resp = await getAllVehicles()
@@ -28,7 +26,9 @@ function Manage() {
                     <h3>{vehicle.model}</h3>
                     <p>{vehicle.year}</p>
                     <p>${vehicle.price}</p>
-                    <button>Edit/Delete</button>
+                    <Link to={`/description/${vehicle._id}`}>
+                        <button>Edit/Delete</button>
+                    </Link>
                 </main>
             </div>
         )
