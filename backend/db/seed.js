@@ -22,7 +22,27 @@ Vehicle.deleteMany({}).then(() => {
         Promise.all([
         ]).then(() => {
             cb500.save()
-            console.log('created cb500')
+            console.log('created cb500', cb500)
+        })
+    })
+    Vehicle.create({
+        make: "Honda",
+        model: "Civic",
+        img: "https://di-uploads-pod12.dealerinspire.com/driversautomart/uploads/2019/12/pasted-image-0.png",
+        year: 2018,
+        price: 15500,
+        info: [
+            {
+                description: "Used Honda civic low mileage",
+                condition: "Used",
+                mileage: 50000
+            }
+        ]
+    }).then(civic => {
+        Promise.all([
+        ]).then(() => {
+            civic.save()
+            console.log('created civic', civic)
         })
     })
 })
