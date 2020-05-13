@@ -1,0 +1,13 @@
+.vehicles img {
+    max-width: 100%;
+    height: auto;
+}
+.vehicles {
+    text-align: center;
+}
+.vehicles button {
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    background-color: red;
+}

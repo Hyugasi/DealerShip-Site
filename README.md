@@ -19,6 +19,7 @@ This site will be a replacement for my friend who owns a used car dealership. It
 - [ ] Design of owner site
 - [ ] Frontend Moving Images
 - [ ] Carosel of images on the "Read More"
+- [ ] Have a file upload instead of a link to the image
 
 ## Time Priority Matrix
 
