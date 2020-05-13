@@ -7,10 +7,11 @@ const VehicleSchema = Schema({
     "img": String,
     "year": String,
     "price": Number,
-    description: [
+    "info": [
         {
-            ref: "Description",
-            type: Schema.Types.ObjectId
+            "description": String,
+            "condition": String,
+            "mileage": Number
         }
     ]
 })
