@@ -11,3 +11,11 @@
     color: black;
     background-color: red;
 }
+.button button {
+    background-color: white;
+    padding: 5px 20px;
+}
+.button {
+    text-align: center;
+    padding: 5px 20px;
+}

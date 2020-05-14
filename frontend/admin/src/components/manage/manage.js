@@ -36,9 +36,11 @@ function Manage() {
 
     return (
         <div>
-            <Link to="/create">
-                <button>Create</button>
-            </Link>
+            <div className="button">
+                <Link to="/create">
+                    <button>Create</button>
+                </Link>
+            </div>
             {listVehicles}
         </div>
     )

@@ -5,6 +5,7 @@ import { deleteVehicle } from '../../services/api-helper'
 
 function Description(props) {
     const [vehicles, setVehicles] = useState([])
+    // const [vehicleState, ]
 
     const vehicleEdit = props.vehicles.filter((vehicle, key) => {
         return vehicle._id === props.match.params.id
