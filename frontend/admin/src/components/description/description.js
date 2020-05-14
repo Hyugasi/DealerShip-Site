@@ -19,6 +19,8 @@ function Description(props) {
                 <p>{vehicleEdit[0].info[0].description}</p>
                 <p>Condition: {vehicleEdit[0].info[0].condition}</p>
                 <p>Mileage: {vehicleEdit[0].info[0].mileage}</p>
+                <button>Delete</button>
+                <button>Edit</button>
             </div>
 
         )

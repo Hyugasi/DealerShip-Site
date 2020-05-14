@@ -36,6 +36,9 @@ function Manage() {
 
     return (
         <div>
+            <Link to="/create">
+                <button>Create</button>
+            </Link>
             {listVehicles}
         </div>
     )
