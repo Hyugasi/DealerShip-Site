@@ -7,10 +7,10 @@ function Create() {
     const [model, setModel] = useState("")
     const [img, setImg] = useState("")
     const [year, setYear] = useState("")
-    const [price, setPrice] = useState(undefined)
+    const [price, setPrice] = useState()
     const [description, setDescription] = useState("")
     const [condition, setCondition] = useState("")
-    const [mileage, setMileage] = useState(undefined)
+    const [mileage, setMileage] = useState()
 
 
     const handleCreate = async (e) => {
@@ -37,8 +37,8 @@ function Create() {
         setDescription("")
         setCondition("")
         setMileage("")
-        console.log(json)
     }
+
     const handleMakeChange = (e) => {
         setMake(e.target.value)
     }
@@ -77,7 +77,7 @@ function Create() {
                 <input type="text" placeholder="condition" value={condition} onChange={handleCondititonChange} /><br />
                 <input type="text" placeholder="mileage" value={mileage} onChange={handleMileageChange} /><br />
                 <Link to="/manage">
-                    <button onSubmit={handleCreate}>Submit</button>
+                    <button>Submit</button>
                 </Link>
             </form>
         </div>
