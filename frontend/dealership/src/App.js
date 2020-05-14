@@ -43,8 +43,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/financing" component={Financing} />
-          <Route exact path="/inventory" component={Inventory} />
-          <Route path="/inventory/:id" render={(routerProps) => (<Info vehicles={vehicles} match={routerProps.match} />)} />
+          <Route path="/inventory" component={Inventory} />
+          <Route path="/info/:id" render={(routerProps) => (<Info vehicles={vehicles} match={routerProps.match} />)} />
           <Route path="/contact" component={Contact} />
           <Redirect to="/" />
         </Switch>

@@ -24,7 +24,7 @@ function Inventory() {
                 <h2>{vehicle.midel}</h2>
                 <h3>{vehicle.year}</h3>
                 <p>${vehicle.price}</p>
-                <Link to={`/inventory/${vehicle._id}`}>
+                <Link to={`/info/${vehicle._id}`}>
                     <button>More Info</button>
                 </Link>
             </div>
