@@ -9,10 +9,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-<<<<<<< HEAD
-
-=======
->>>>>>> 9c216f5945901828b00830e3b7570d7bde4af500
 }
 nav a {
   text-decoration: none;
