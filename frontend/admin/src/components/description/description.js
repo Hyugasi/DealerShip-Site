@@ -24,6 +24,11 @@ function Description(props) {
         refreshPage()
     }
 
+
+    const handleEdit = async (event) => {
+        console.log(vehicleEdit[0])
+    }
+
     return (
         <div>
             <h1>Details</h1>
@@ -36,7 +41,10 @@ function Description(props) {
             <Link to="/manage">
                 <button onClick={() => handleDelete(vehicleEdit[0]._id)}>Delete</button>
             </Link>
-            <button>Edit</button>
+            <Link to={`/description/${vehicleEdit[0]._id}/edit`}>
+                <button onClick={handleEdit}>Edit</button>
+            </Link>
+
         </div>
     )
 }

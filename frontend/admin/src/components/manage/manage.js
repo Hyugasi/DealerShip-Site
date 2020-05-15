@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './style.css'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import { getAllVehicles } from '../../services/api-helper'
 
 function Manage() {
@@ -36,9 +36,11 @@ function Manage() {
 
     return (
         <div>
-            <Link to="/create">
-                <button>Create</button>
-            </Link>
+            <div className="button">
+                <Link to="/create">
+                    <button>Create</button>
+                </Link>
+            </div>
             {listVehicles}
         </div>
     )
