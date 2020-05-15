@@ -3,7 +3,9 @@
     height: auto;
 }
 .vehicles {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 .vehicles button {
     padding: 20px;
