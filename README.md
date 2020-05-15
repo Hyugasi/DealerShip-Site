@@ -6,26 +6,27 @@ This site will be a replacement for my friend who owns a used car dealership. It
 ![Image of the Wireframes](https://i.imgur.com/IaxAooS.png)
 
 ## MVPs
-- [ ] Full CRUD backend
-- [ ] Deploy backend to heroku
-- [ ] Implement crud into the owner site
-- [ ] Design of Frontend site
-- [ ] Deploy Frontend
+- [x] Full CRUD backend
+- [x] Deploy backend to heroku
+- [x] Implement crud into the owner site
+- [x] Design of Frontend site
+- [x] Deploy Frontend
 - [ ] Responsivness
 - [ ] Authentication
 - [ ] Search Function
 
 ## Post MVPs
-- [ ] Design of owner site
+- [x] Design of owner site
 - [ ] Frontend Moving Images
 - [ ] Carosel of images on the "Read More"
+- [ ] Have a file upload instead of a link to the image
 
 ## Time Priority Matrix
 
 | Component            | Priority | Estimated Time | Time Invetsted | Actual Time |
 | -------------------- | :------: | :------------: | :------------: | :---------: |
-| Building out a backend |    H     |      10hrs      |      0hrs      |    0hrs     |
-| Deploying the backend to heroku     |    H     |      4hrs      |     0hrs      |    0hrs    |
+| Building out a backend |    H     |      10hrs      |      20hrs      |    15hrs     |
+| Deploying the backend to heroku     |    H     |      4hrs      |     5hrs      |    2hrs    |
 | Design the frontend       |    H     |      20hrs      |      0hrs      |    0hrs     |
 | Search Functionality        |    H     |      5hrs      |      0hrs      |    0hrs     |
 | Authentication for seperate site          |    H     |      10hrs      |      0hrs      |    0hrs     |

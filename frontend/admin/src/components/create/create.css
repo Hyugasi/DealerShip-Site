@@ -1,0 +1,16 @@
+form input {
+    color: black;
+    background-color: lightgrey;
+    border-color: black;
+}
+
+form {
+    text-align: center;
+}
+form button {
+    text-align: center;
+    padding: 5px 15px;
+}
+/* form input:nth-child(11) {
+    padding: 50px 20px;
+} */

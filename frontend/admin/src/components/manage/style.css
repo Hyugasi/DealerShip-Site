@@ -1,0 +1,21 @@
+.vehicles img {
+    max-width: 50%;
+    height: auto;
+}
+.vehicles {
+    text-align: center;
+}
+.vehicles button {
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    background-color: red;
+}
+.button button {
+    background-color: white;
+    padding: 5px 20px;
+}
+.button {
+    text-align: center;
+    padding: 5px 20px;
+}
