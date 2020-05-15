@@ -9,13 +9,51 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9c216f5945901828b00830e3b7570d7bde4af500
 }
 nav a {
   text-decoration: none;
   color: #262626;
+  padding: 30px;
 }
 nav a:hover {
   text-decoration: underline;
   background-color: #595959;
   color: #BABDBF;
+}
+header img {
+  position: relative;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px){
+  nav a:nth-child(1){
+    padding: 0px
+  }
+  nav a:nth-child(2) {
+    display: none;
+  }
+  nav a:nth-child(3) {
+    display: none;
+  }
+  nav a:nth-child(4) {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .wheel {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
 }
