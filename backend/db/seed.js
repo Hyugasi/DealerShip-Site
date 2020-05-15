@@ -8,7 +8,7 @@ Vehicle.deleteMany({}).then(() => {
     Vehicle.create({
         make: "Honda",
         model: "CB500X",
-        img: "https://imgur.com/iOpGslT",
+        img: "https://i.imgur.com/iOpGslT.jpg",
         year: 2015,
         price: 2500,
         info: [
