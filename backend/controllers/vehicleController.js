@@ -1,7 +1,7 @@
 const Vehicle = require('../models/vehicleModel')
 
 const getAllVehicles = (req, res) => {
-    Vehicle.find({}).populate('description').then(vehicles => {
+    Vehicle.find({}).then(vehicles => {
         res.json(vehicles)
     })
 }

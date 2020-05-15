@@ -14,10 +14,10 @@ app.get('/', (req, res) => {
 })
 
 const vehicleRoutes = require('./routes/vehicleRoutes')
-const descriptionRoutes = require('./routes/descriptionRoutes')
+// const descriptionRoutes = require('./routes/descriptionRoutes')
 
 app.use('/vehicles', vehicleRoutes)
-app.use('/descriptions', descriptionRoutes)
+// app.use('/descriptions', descriptionRoutes)
 
 app.set('port', PORT)
 app.listen(app.get('port'), () => { console.log(`listening on port: ${app.get('port')}`) })
