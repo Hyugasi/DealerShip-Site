@@ -5,11 +5,11 @@ import { deleteVehicle } from '../../services/api-helper'
 
 function Description(props) {
     const [vehicles, setVehicles] = useState([])
-    // const [vehicleState, ]
 
     const vehicleEdit = props.vehicles.filter((vehicle, key) => {
         return vehicle._id === props.match.params.id
     })
+
     const refreshPage = () => {
         window.location.reload()
     }
@@ -20,6 +20,11 @@ function Description(props) {
         const vehicleArr = vehicles.filter((vehicle) => vehicle._id !== id)
         setVehicles(vehicleArr)
         refreshPage()
+    }
+
+
+    const handleEdit = async (event) => {
+        console.log(vehicleEdit[0])
     }
 
     return (
@@ -34,7 +39,10 @@ function Description(props) {
             <Link to="/manage">
                 <button onClick={() => handleDelete(vehicleEdit[0]._id)}>Delete</button>
             </Link>
-            <button>Edit</button>
+            <Link to={`/description/${vehicleEdit[0]._id}/edit`}>
+                <button onClick={handleEdit}>Edit</button>
+            </Link>
+
         </div>
     )
 }

@@ -1,44 +1,31 @@
 import React, { useState } from 'react'
-import { Link, Redirect } from 'react-router-dom'
-import { createVehicle } from '../../services/api-helper'
-import './create.css'
+import { updateVehicle } from '../../services/api-helper'
 
-function Create() {
+function Edit(props) {
+    const [vehicle, setVehicle] = useState([])
     const [make, setMake] = useState("")
     const [model, setModel] = useState("")
     const [img, setImg] = useState("")
     const [year, setYear] = useState("")
-    const [price, setPrice] = useState(undefined)
+    const [price, setPrice] = useState()
     const [description, setDescription] = useState("")
     const [condition, setCondition] = useState("")
-    const [mileage, setMileage] = useState(undefined)
+    const [mileage, setMileage] = useState()
 
+    const vehicleEdit = props.vehicles.filter((vehicle, key) => {
+        return vehicle._id === props.match.params.id
+    })
 
-    const handleCreate = async (e) => {
-        e.preventDefault();
-        const json = await createVehicle({
-            make: make,
-            model: model,
-            img: img,
-            year: year,
-            price: price,
-            info: [
-                {
-                    description: description,
-                    condition: condition,
-                    mileage: mileage,
-                }
-            ]
-        })
-        setMake("")
-        setModel("")
-        setImg("")
-        setYear("")
-        setPrice("")
-        setDescription("")
-        setCondition("")
-        setMileage("")
+    const [updateVehicles, setUpdateVehicles] = useState(vehicleEdit[0])
+    const handleUpdate = async (e) => {
+        e.preventDefault()
+        const json = await updateVehicle(
+            vehicleEdit[0],
+            updateVehicle
+        )
+        setUpdateVehicles("")
     }
+
     const handleMakeChange = (e) => {
         setMake(e.target.value)
     }
@@ -66,8 +53,7 @@ function Create() {
 
     return (
         <div>
-            <h1>Add a Vehicle</h1>
-            <form onSubmit={handleCreate} >
+            <form onSubmit={handleUpdate} >
                 <input type="text" placeholder="Make" value={make} onChange={handleMakeChange} /><br />
                 <input type="text" placeholder="model" value={model} onChange={handleModelChange} /><br />
                 <input type="text" placeholder="img" value={img} onChange={handleImgChange} /><br />
@@ -78,11 +64,8 @@ function Create() {
                 <input type="text" placeholder="mileage" value={mileage} onChange={handleMileageChange} /><br />
                 <button>Submit</button>
             </form>
-            <Link to="/manage">
-                <button>Go back to home</button>
-            </Link>
-        </div >
+        </div>
     )
 }
 
-export default Create
+export default Edit
