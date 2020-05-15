@@ -8,10 +8,10 @@ function Create() {
     const [model, setModel] = useState("")
     const [img, setImg] = useState("")
     const [year, setYear] = useState("")
-    const [price, setPrice] = useState(undefined)
+    const [price, setPrice] = useState()
     const [description, setDescription] = useState("")
     const [condition, setCondition] = useState("")
-    const [mileage, setMileage] = useState(undefined)
+    const [mileage, setMileage] = useState()
 
 
     const handleCreate = async (e) => {
@@ -39,6 +39,7 @@ function Create() {
         setCondition("")
         setMileage("")
     }
+
     const handleMakeChange = (e) => {
         setMake(e.target.value)
     }
