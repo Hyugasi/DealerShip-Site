@@ -11,15 +11,15 @@ This site will be a replacement for my friend who owns a used car dealership. It
 - [x] Implement crud into the owner site
 - [x] Design of Frontend site
 - [x] Deploy Frontend
-- [ ] Responsivness
-- [ ] Authentication
-- [ ] Search Function
 
 ## Post MVPs
 - [x] Design of owner site
 - [ ] Frontend Moving Images
 - [ ] Carosel of images on the "Read More"
 - [ ] Have a file upload instead of a link to the image
+- [ ] Responsivness
+- [ ] Authentication
+- [ ] Search Function
 
 ## Time Priority Matrix
 
@@ -27,9 +27,9 @@ This site will be a replacement for my friend who owns a used car dealership. It
 | -------------------- | :------: | :------------: | :------------: | :---------: |
 | Building out a backend |    H     |      10hrs      |      20hrs      |    15hrs     |
 | Deploying the backend to heroku     |    H     |      4hrs      |     5hrs      |    2hrs    |
-| Design the frontend       |    H     |      20hrs      |      0hrs      |    0hrs     |
+| Design the frontend       |    H     |      20hrs      |      10hrs      |    8hrs     |
 | Search Functionality        |    H     |      5hrs      |      0hrs      |    0hrs     |
-| Authentication for seperate site          |    H     |      10hrs      |      0hrs      |    0hrs     |
-| Responsive           |    H     |      5hrs      |      0hrs      |    0hrs     |
-| Learn new authentication methods           |    H     |      5hrs      |      0hrs      |    0hrs     |
-| Total                |    H     |     0hrs      |     0hrs      |    0hrs    |
+| Authentication for seperate site          |    H     |      10hrs      |      24hrs      |    10hrs     |
+| Responsive           |    H     |      5hrs      |      2hrs      |    5hrs     |
+| Learn new authentication methods           |    H     |      5hrs      |      5hrs      |    10hrs     |
+| Total                |    H     |     69hrs      |     69hrs      |    48hrs    |
