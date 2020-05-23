@@ -66,7 +66,7 @@ function Create() {
     }
 
     return (
-        <div>
+        <div className = "create">
             <h1>Add a Vehicle</h1>
             <form onSubmit={handleCreate} >
                 <input type="text" placeholder="Make" value={make} onChange={handleMakeChange} /><br />
@@ -74,7 +74,7 @@ function Create() {
                 <input type="text" placeholder="img" value={img} onChange={handleImgChange} /><br />
                 <input type="text" placeholder="year" value={year} onChange={handleYearChange} /><br />
                 <input type="text" placeholder="price" value={price} onChange={handlePriceChange} /><br />
-                <input type="text" placeholder="description" value={description} onChange={handleDescChange} rows="3" /><br />
+                <textarea type="text" placeholder="description" value={description} onChange={handleDescChange} /><br />
                 <input type="text" placeholder="condition" value={condition} onChange={handleCondititonChange} /><br />
                 <input type="text" placeholder="mileage" value={mileage} onChange={handleMileageChange} /><br />
                 <button>Submit</button>
